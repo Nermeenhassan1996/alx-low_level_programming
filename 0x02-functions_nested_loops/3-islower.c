@@ -2,6 +2,7 @@
 
 /*
  * _islower - Check description
+ * @c: An input character
  * Description: checks if the c is lower case or not
  * Return: 1 if true 0 if false
  */
