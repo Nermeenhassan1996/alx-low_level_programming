@@ -13,7 +13,7 @@
 void print_remaining_days(int month, int day, int year)
 {
 	int dayConverted;
-		
+
 	if (year % 4 == 0)
 	{
 		dayConverted = convert_day(month, day);
