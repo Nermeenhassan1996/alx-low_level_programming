@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
  * print_remaining_days - takes a date and prints how many days are
@@ -20,20 +20,20 @@ void print_remaining_days(int month, int day, int year)
 		if ((month == 2 && day < 29) || month > 2)
 			dayConverted += 1;
 
-		Console.WriteLine("Day of the year: {0}\n", dayConverted);
-		Console.WriteLine("Remaining days: {0}\n", (366 - dayConverted));
+		printf("Day of the year: %d\n", dayConverted);
+		printf("Remaining days: %d\n", 366 - dayConverted);
 	}
 	else
 	{
 		if (month == 2 && day >= 29)
 		{
-			Console.WriteLine("Invalid date: {0}/{1}/{2}\n", month, day, year);
+			printf("Invalid date: %02d/%02d/%04d\n", month, day, year);
 		}
 		else
 		{
 			dayConverted = convert_day(month, day);
-			Console.WriteLine("Day of the year: {0}\n", dayConverted);
-			Console.WriteLine("Remaining days: {0}\n", (365 - dayConverted));
+			printf("Day of the year: %d\n", dayConverted);
+			printf("Remaining days: %d\n", 365 - dayConverted);
 		}
 	}
 }
