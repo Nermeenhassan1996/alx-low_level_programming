@@ -6,11 +6,10 @@
 */
 int main(void)
 {
-	unsigned long int i = 3, n = 612852475143, largestFactor = -1;
+	long i = 3, n = 612852475143;
 
 	while (n % 2 == 0)
 	{
-		largestFactor = 2;
 		n /= 2;
 	}
 
@@ -18,11 +17,10 @@ int main(void)
 	{
 		while (n % i == 0)
 		{
-			largestFactor = i;
 			n /= i;
 		}
 	}
 
-	printf("%lu\n", largestFactor);
+	printf("%lu\n", n);
 	return (0);
 }
