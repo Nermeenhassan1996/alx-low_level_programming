@@ -19,7 +19,7 @@ void rev_string(char *s)
 	{
 		if (i >= (len - (i + 1)))
 			break;
-		
+
 		temp = s[i];
 		s[i] = s[len - (i + 1)];
 		s[len - (i + 1)] = temp;
