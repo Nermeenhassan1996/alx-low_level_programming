@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * rev_string - check description
+ * puts2 - check description
  * Description: function that prints every other character
- * @s: an input string
+ * @str: an input string
  * Return: Nothing
  */
 void puts2(char *str)
@@ -14,7 +14,7 @@ void puts2(char *str)
 	while (str[len] != '\0')
 		len++;
 
-	for (; i < len; i+=2)
+	for (; i < len; i += 2)
 		_putchar(str[i]);
 
 	_putchar('\n');
