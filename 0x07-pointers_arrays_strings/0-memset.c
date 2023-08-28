@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * memset - check description
+ * _memset - check description
  * Description: a function that fills memory with a constant byte
  * @s: A pointer to the memory area to be filled.
  * @c: The character to fill the memory area with.
