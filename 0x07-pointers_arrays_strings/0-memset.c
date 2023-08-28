@@ -8,13 +8,14 @@
  * @n: The number of bytes to be filled.
  * Return: A pointer to the filled memory area @s.
  */
-void *_memset(void *s, int c, size_t n)
+char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i;
-	unsigned char *memory = s, value = c;
+	char *start = s;
 
-	for (i = 0; i < n; i++)
-		memory[i] = value;
-
-	return (memory);
+	while (n--)
+	{
+		*s = b;
+		s++;
+	}
+	return (start);
 }
