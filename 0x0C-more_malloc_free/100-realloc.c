@@ -3,7 +3,8 @@
 
 /**
  * _realloc - check description
- * Description: a function that reallocates a memory block using malloc and free
+ * Description: a function that reallocates a memory block
+ * using malloc and free
  * @ptr: pointer to the memory previously allocated
  * @old_size: old size in bytes of memory llocated space
  * @new_size: new size in bytes of memory to be allocated
