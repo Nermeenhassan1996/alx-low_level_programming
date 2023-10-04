@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_strlen.c"
 
 /**
  * create_file - create file with rw permissions and write into it exclusively
